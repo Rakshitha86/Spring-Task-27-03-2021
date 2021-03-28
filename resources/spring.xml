@@ -5,36 +5,80 @@
            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
 	<bean class="com.xworkz.company.Company">
-	<property name="employees">
-	<list>
-	
-	<bean class="com.xworkz.company.Employee">
-	<property name="name" value="emp1"></property>
-	<property name="id" value="1"></property>
-	</bean>
-	
-	<bean class="com.xworkz.company.Employee">
-	<property name="name" value="emp2"></property>
-	<property name="id" value="2"></property>
-	</bean>
-	
-	<bean class="com.xworkz.company.Employee">
-	<property name="name" value="emp3"></property>
-	<property name="id" value="3"></property>
-	</bean>
-	
-	<bean class="com.xworkz.company.Employee">
-	<property name="name" value="emp4"></property>
-	<property name="id" value="4"></property>
-	</bean>
-	
-	<bean class="com.xworkz.company.Employee">
-	<property name="name" value="emp5"></property>
-	<property name="id" value="5"></property>
-	</bean>
-	</list>
-	</property>
-	</bean>
-	
+		<property name="employees">
+			<list>
 
+				<bean class="com.xworkz.company.Employee">
+					<property name="name" value="emp1"></property>
+					<property name="id" value="1"></property>
+				</bean>
+
+				<bean class="com.xworkz.company.Employee">
+					<property name="name" value="emp2"></property>
+					<property name="id" value="2"></property>
+				</bean>
+
+				<bean class="com.xworkz.company.Employee">
+					<property name="name" value="emp3"></property>
+					<property name="id" value="3"></property>
+				</bean>
+
+				<bean class="com.xworkz.company.Employee">
+					<property name="name" value="emp4"></property>
+					<property name="id" value="4"></property>
+				</bean>
+
+				<bean class="com.xworkz.company.Employee">
+					<property name="name" value="emp5"></property>
+					<property name="id" value="5"></property>
+				</bean>
+
+			</list>
+		</property>
+	</bean>
+
+	<bean class="com.xworkz.set.Company">
+		<property name="employees">
+			<set>
+
+				<bean class="com.xworkz.set.Employee">
+					<property name="name" value="emp1"></property>
+					<property name="salary" value="20000"></property>
+				</bean>
+
+				<bean class="com.xworkz.set.Employee">
+					<property name="name" value="emp2"></property>
+					<property name="salary" value="25000"></property>
+				</bean>
+
+				<bean class="com.xworkz.set.Employee">
+					<property name="name" value="emp3"></property>
+					<property name="salary" value="30000"></property>
+				</bean>
+
+				<bean class="com.xworkz.set.Employee">
+					<property name="name" value="emp4"></property>
+					<property name="salary" value="35000"></property>
+				</bean>
+
+				<bean class="com.xworkz.set.Employee">
+					<property name="name" value="emp5"></property>
+					<property name="salary" value="40000"></property>
+				</bean>
+
+			</set>
+		</property>
+	</bean>
+
+	<bean class="com.xworkz.map.Employee">
+		<property name="states">
+			<map>
+				<entry key="emp1" value="Karnataka"></entry>
+				<entry key="emp2" value="Tamil Nadu"></entry>
+				<entry key="emp3" value="Andhra Pradesh"></entry>
+				<entry key="emp4" value="Maharashtra"></entry>
+				<entry key="emp5" value="Uttar Pradesh"></entry>
+			</map>
+		</property>
+	</bean>
 </beans>
