@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean class="com.xworkz.company.Company">
+	<property name="employees">
+	<list>
+	
+	<bean class="com.xworkz.company.Employee">
+	<property name="name" value="emp1"></property>
+	<property name="id" value="1"></property>
+	</bean>
+	
+	<bean class="com.xworkz.company.Employee">
+	<property name="name" value="emp2"></property>
+	<property name="id" value="2"></property>
+	</bean>
+	
+	<bean class="com.xworkz.company.Employee">
+	<property name="name" value="emp3"></property>
+	<property name="id" value="3"></property>
+	</bean>
+	
+	<bean class="com.xworkz.company.Employee">
+	<property name="name" value="emp4"></property>
+	<property name="id" value="4"></property>
+	</bean>
+	
+	<bean class="com.xworkz.company.Employee">
+	<property name="name" value="emp5"></property>
+	<property name="id" value="5"></property>
+	</bean>
+	</list>
+	</property>
+	</bean>
+	
+
+</beans>
